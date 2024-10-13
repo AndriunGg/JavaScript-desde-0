@@ -20,7 +20,8 @@ console.log(persona);//Aca validamos que se creo correctamente
 persona.telefono = 3116683455
 console.log(persona.telefono)//Aca validamos la modificacion
 
-//Borrar una propiedad
+//Borrar una propiedad 
+// (Se borra tanto la propiedad como el valor asociado)
 
 delete persona.telefono;
 console.log(persona);//Aca validamos que la borramos correctamente
