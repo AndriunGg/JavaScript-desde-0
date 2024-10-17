@@ -29,7 +29,7 @@ pero esto nos regresa nuestro objeto en forma de arreglo
 regresa solamente los valores de las propiedades.
 */
 
-objetoValues= Object.values(persona)
+let objetoValues= Object.values(persona)
 
 console.log(objetoValues)
 

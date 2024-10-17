@@ -1,5 +1,5 @@
 /*EL metodo get es otra forma para 
-crear una funcion en mi objeto
+crear una funcion en un objeto
 
 Este manera no tiene ninguna diferencia 
 con el otro modo de declaracion de funciones, 
