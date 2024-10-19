@@ -33,7 +33,7 @@ console.log (padre.nombre);
 //-------------------------------------
 
 
-//Agregar un objeto en funcion constuctor
+//Agregar un metodo en funcion constuctor
 //Se hace de la misma forma que cuando se hace directamente en un objeto
 
 function Personas2(nombre,apellido,email){

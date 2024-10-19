@@ -1,4 +1,4 @@
-/*Para modificar propiedades o objetos de nuestro constructor
+/*Para modificar propiedades o metodos de nuestro constructor
  podemos usar prototype
 */
 
@@ -6,10 +6,6 @@ function Personas(nombre, apellido, email){
     this.nombre = nombre;
     this.apellido = apellido;
     this.email = email;
-    this.nombreCompleto = function(){
-        return this.nombre+" "+this.apellido
-    }
-
 }
 
 hijo = new Personas('Andriun','Hernandez','andriunhz@gmail.com');
@@ -32,3 +28,13 @@ Personas.prototype.tel = 232222222;
 console.log(hijo)
 
 
+//Tambien se pueden agregar metodos
+
+Personas.prototype.nombreCompleto= function(){
+    return this.nombre+" "+this.apellido
+}
+
+//Aca validamos que ya esta el metodo en la funcion 'Personas'
+console.log(hijo.nombreCompleto());
+
+console.log(madre.nombreCompleto());
