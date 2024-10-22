@@ -6,7 +6,7 @@ class Personas {
         this._apellido = apellido;
     }
 
-    get nombre(){//Metodo para devolver el nombre completo
+    get nombre(){//Metodo para devolver el nombre 
        return this._nombre ; 
     }
 

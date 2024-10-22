@@ -1,10 +1,6 @@
-/*Herencias, como su nombre lo dice nos sirve 
-para heredar cosas de una clase a otra
-Heredamos las propiedades y los metodos
+//Cuando usamos el metodo 'toString()' en un objeto nos devolvera 'object:object'
+//Si deseamos que nos entregue otro valor lo podemos personalizar sobreescribiendolo
 
-Manejaremos clases "Padres" y clases "Hijas", 
-Siendo las clases padres las que heredaran sus propiedades/metodos
-*/
 class Personas {
     constructor(nombre,apellido){
         this._nombre = nombre;
@@ -22,13 +18,18 @@ class Personas {
     nombreCompleto (){//Metodo para el nombre completo
         return this._nombre + " " + this._apellido;
     }   
+
+    toString(){
+        return this._nombre + " " + this._apellido;
+
+    }
 }
 
 
 
 class empleado extends Personas {
-    constructor (nombre,apellido,cargo){//En los parametros colocamos las propiedades del padre
-        super (nombre,apellido);//Con esto llamamos las propiedades del padre
+    constructor (nombre,apellido,cargo){
+        super (nombre,apellido);
         this._cargo = cargo;
     }
     get cargo(){//Metodo para devolver el cargo
@@ -37,12 +38,9 @@ class empleado extends Personas {
     set cargo(cargo){//Metodo para modificar el cargo
         this.cargo= cargo;
     }
+        
+    nombreCompleto (){
+        return super.nombreCompleto() + ',' + this.cargo;
+       }
+
 }
-
-let andriun = new empleado('Andriun','Hernandez','Programador')
-
-
-
-
-console.log(andriun.nombre);//Aca vemos que se heredo la propiedad 'Nombre' de la clase padre
-console.log(andriun.nombreCompleto());//Aca vemos que tambien se heredan metodos
