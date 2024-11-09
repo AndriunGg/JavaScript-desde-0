@@ -7,7 +7,7 @@
 // 5. Relacionales <, <=, > y >=
 // 6. Igualdad == y !=
 // 7. Logicos && y ||
-// 8. Asignacion =, =+, -=, *=, etc
+// 8. Asignacion =, +=, -=, *=, etc
 
 // Ej. Se revisa de izq a der
 let a = 12 / 3 + 2 * 3 - 1;
